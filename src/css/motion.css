@@ -1,0 +1,64 @@
+/* ── progress ── */
+.progress { position: fixed; inset: 0 0 auto 0; height: 3px; z-index: 80; pointer-events: none; }
+.progress i { display: block; height: 100%; background: var(--accent); transform-origin: left center; transform: scaleX(var(--prog, 0)); }
+
+/* ── scroll reveal: spring writes --p, CSS reads it ── */
+.js [data-reveal] {
+  --p: 0;
+  opacity: clamp(0, var(--p), 1);
+  transform: translate3d(0, calc((1 - var(--p)) * 26px), 0) scale(calc(0.97 + var(--p) * 0.03));
+  will-change: transform, opacity;
+}
+.reveal-fail [data-reveal] { --p: 1; }
+
+/* ── keyframes ── */
+@keyframes ping { 0% { box-shadow: 0 0 0 0 var(--a-flash); } 70% { box-shadow: 0 0 0 0.5rem transparent; } 100% { box-shadow: 0 0 0 0 transparent; } }
+@keyframes breathe { 50% { opacity: 0.3; } }
+@keyframes shimmer { to { background-position: -200% 0; } }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+@keyframes drift { 0% { transform: translate3d(0, 0, 0) scale(1); } 100% { transform: translate3d(5%, 6%, 0) scale(1.12); } }
+@keyframes marquee { to { transform: translateX(-50%); } }
+@keyframes rowIn { from { opacity: 0; transform: translateY(0.6rem); } to { opacity: 1; transform: none; } }
+@keyframes flashUp { 0% { background: var(--a-flash); color: var(--ink-strong); } 100% { background: transparent; } }
+@keyframes flashDown { 0% { background: var(--a-fill-2); } 100% { background: transparent; } }
+@keyframes flashText { 0%, 100% { color: var(--ink-strong); } 40% { color: var(--n-7); } }
+@keyframes orbitA { to { rotate: 352deg; } }
+@keyframes orbitB { to { rotate: 372deg; } }
+@keyframes dashflow { to { stroke-dashoffset: -24; } }
+
+.sk { animation: shimmer 1.4s linear infinite; }
+.floaty { animation: float 5.5s ease-in-out infinite; }
+.f2 { animation-delay: -1.1s; animation-duration: 6.2s; }
+.f3 { animation-delay: -2.2s; animation-duration: 4.8s; }
+.f4 { animation-delay: -3.3s; animation-duration: 6.8s; }
+.f5 { animation-delay: -4.4s; }
+.b1 { animation: drift 22s ease-in-out infinite alternate; }
+.b2 { animation: drift 28s ease-in-out infinite alternate-reverse; }
+.b3 { animation: drift 18s ease-in-out infinite alternate; }
+.r1 { animation: orbitA 80s linear infinite; }
+.r2 { animation: orbitB 120s linear infinite; }
+.ticker-track { animation: marquee var(--marquee-dur, 48s) linear infinite; }
+.ticker:hover .ticker-track, .ticker:focus-within .ticker-track { animation-play-state: paused; }
+.net-lines path { animation: dashflow 1.2s linear infinite; }
+.row.enter { animation: rowIn 0.5s var(--ease-soft) both; animation-delay: calc(var(--i, 0) * 45ms); }
+.bar-row.enter, .tick.enter { animation: rowIn 0.5s var(--ease-soft) both; animation-delay: calc(var(--i, 0) * 45ms); }
+
+/* ── parallax layers move through the individual translate property ── */
+[data-depth] { will-change: translate; }
+
+/* ── calm mode and reduced motion: instant, still ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  [data-reveal] { --p: 1 !important; }
+  [data-depth] { translate: none !important; will-change: auto; }
+  .ticker { overflow-x: auto; -webkit-mask-image: none; mask-image: none; }
+  .ticker-track .dup { display: none; }
+  [data-spot]::after { display: none; }
+}
+html[data-calm="on"] *, html[data-calm="on"] *::before, html[data-calm="on"] *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+html[data-calm="on"] [data-reveal] { --p: 1 !important; }
+html[data-calm="on"] [data-depth] { translate: none !important; will-change: auto; }
+html[data-calm="on"] .ticker { overflow-x: auto; -webkit-mask-image: none; mask-image: none; }
+html[data-calm="on"] .ticker-track .dup { display: none; }
+html[data-calm="on"] [data-spot]::after { display: none; }
+html[data-calm="on"] .bar-track i { transition: none; }

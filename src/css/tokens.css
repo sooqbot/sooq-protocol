@@ -1,0 +1,100 @@
+/*
+  The only file that may hold colour literals.
+  Every --b-* value is a measured cluster mean (4-bit bins, opaque pixels) from
+  brand/LOGO SOOQ PNG.png, 2000x2000, colour type 6. Pixel counts are in the trailing note.
+  Nothing else is hand-picked: neutrals and alphas below are color-mix() of these.
+*/
+:root {
+  color-scheme: dark;
+
+  --b-void: #050304;     /* 3316041 px, frame background */
+  --b-ember-1: #160704;  /* 3935 px, cube edge shadow */
+  --b-ember-2: #240904;  /* 672 px, cube edge shadow */
+  --b-red-deep: #b72c19; /* 34521 px, lower-right body */
+  --b-red: #d8371a;      /* 46712 px */
+  --b-red-hot: #ec4419;  /* 48135 px */
+  --b-orange: #f9671a;   /* 47526 px, main body */
+  --b-orange-2: #fc771d; /* 40047 px */
+  --b-amber: #fd8824;    /* 36583 px */
+  --b-amber-2: #fd972a;  /* 33169 px */
+  --b-gold: #fda836;     /* 28624 px */
+  --b-yellow: #fdb739;   /* 16987 px */
+  --b-yellow-2: #fdc748; /* 18748 px */
+  --b-butter: #fdd558;   /* 13753 px */
+  --b-cream: #fdeb88;    /* 14761 px, upper-left sheen */
+  --b-ivory: #fdfae7;    /* 1340 px, gloss */
+  --b-white: #fcfbf7;    /* 1084 px, eye glint */
+
+  /* warm ramp: ivory mixed into void */
+  --n-0: var(--b-void);
+  --n-1: var(--b-ember-1);
+  --n-2: color-mix(in srgb, var(--b-ivory) 7%, var(--b-void));
+  --n-3: color-mix(in srgb, var(--b-ivory) 11%, var(--b-void));
+  --n-4: color-mix(in srgb, var(--b-ivory) 17%, var(--b-void));
+  --n-5: color-mix(in srgb, var(--b-ivory) 27%, var(--b-void));
+  --n-6: color-mix(in srgb, var(--b-ivory) 42%, var(--b-void));
+  --n-7: color-mix(in srgb, var(--b-ivory) 57%, var(--b-void));
+  --n-8: color-mix(in srgb, var(--b-ivory) 71%, var(--b-void));
+  --n-9: color-mix(in srgb, var(--b-ivory) 85%, var(--b-void));
+  --n-10: var(--b-ivory);
+  --n-11: var(--b-white);
+
+  --a-line: color-mix(in srgb, var(--b-ivory) 9%, transparent);
+  --a-line-2: color-mix(in srgb, var(--b-orange) 30%, transparent);
+  --a-fill: color-mix(in srgb, var(--b-ivory) 5%, transparent);
+  --a-fill-2: color-mix(in srgb, var(--b-ivory) 10%, transparent);
+  --a-glow: color-mix(in srgb, var(--b-orange) 22%, transparent);
+  --a-glow-2: color-mix(in srgb, var(--b-orange) 10%, transparent);
+  --a-shadow: color-mix(in srgb, var(--b-void) 60%, transparent);
+  --a-scrim: color-mix(in srgb, var(--b-void) 80%, transparent);
+  --a-flash: color-mix(in srgb, var(--b-orange) 42%, transparent);
+  --a-ring: color-mix(in srgb, var(--b-orange) 38%, transparent);
+
+  --bg: var(--b-void);
+  --surface: color-mix(in srgb, var(--b-ember-1) 80%, var(--b-void));
+  --surface-raised: var(--n-3);
+  --surface-deep: color-mix(in srgb, var(--b-ember-1) 55%, var(--b-void));
+  --ink: var(--b-ivory);
+  --ink-strong: var(--b-white);
+  --muted: var(--n-7);
+  --muted-2: var(--n-8);
+  --faint: var(--n-6);
+  --accent: var(--b-orange);
+  --accent-2: var(--b-amber-2);
+  --accent-ink: var(--b-void);
+  --up: var(--b-yellow-2);
+  --down: var(--b-red-hot);
+  --focus: var(--b-yellow-2);
+
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+
+  --ease-spring: cubic-bezier(0.2, 0.9, 0.25, 1.35);
+  --ease-soft: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-out: cubic-bezier(0.2, 0.65, 0.3, 1);
+  --dur-fast: 0.16s;
+  --dur-mid: 0.25s;
+  --dur-slow: 0.42s;
+
+  --r-control: 999px;
+  --r-card: 18px;
+  --r-card-lg: 19px;
+  --r-job: 12px;
+
+  --header-h: 76px;
+  --container: min(1180px, 100% - 96px);
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --header-h: 66px;
+    --container: calc(100% - 64px);
+  }
+}
+
+@media (max-width: 680px) {
+  :root {
+    --header-h: 60px;
+    --container: calc(100% - 40px);
+  }
+}

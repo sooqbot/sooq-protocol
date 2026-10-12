@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en" data-calm="off">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SOOQ — a live bazaar for Solana stalls</title>
+<meta name="description" content="SOOQ ranks the busiest boosted Solana stalls by what changes hands, and redraws the board as you look on.">
+<meta name="theme-color" content="{{THEME_COLOR}}">
+<meta property="og:title" content="SOOQ — a live bazaar for Solana stalls">
+<meta property="og:description" content="Ten boosted Solana stalls, ranked by the day's traffic, redrawn as you look on.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sooq.fun/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="canonical" href="https://sooq.fun/">
+<script src="assets/boot.js"></script>
+<link rel="stylesheet" href="{{ASSET_CSS}}">
+<script type="module" src="{{ASSET_JS}}"></script>
+</head>
+<body>
+<svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false">
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15V6.5A2.5 2.5 0 0 1 7.5 4H15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h13m-5-5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 5v13m-5-5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  {{MARK_SYMBOL}}
+</svg>
+
+<div class="progress" aria-hidden="true"><i data-progress></i></div>
+<a class="skip" href="#floor">Jump past the header</a>
+
+<div class="page" id="top">
+  <div class="topbar">
+    <header class="header">
+      <div class="nav-inner">
+        <a class="brand" href="#top" aria-label="SOOQ, top of page">
+          <img class="brand-logo" src="assets/logo-96.png" width="32" height="32" alt="">
+          <span class="brand-word">sooq</span>
+        </a>
+        <nav class="nav-links" aria-label="Sections">
+          <a href="#ledger">Ledger</a>
+          <a href="#lenses">Lenses</a>
+          <a href="#stages">Stages</a>
+          <a href="#records">Records</a>
+        </nav>
+        <div class="social" data-slot="social">
+{{SOCIAL}}
+        </div>
+      </div>
+    </header>
+    <div class="ca-bar">
+      <div class="ca-inner">
+{{CA_SLOT}}
+      </div>
+    </div>
+  </div>
+
+  <main id="floor">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-atmosphere" aria-hidden="true">
+        <i class="blob b1" data-depth="0.25"></i>
+        <i class="blob b2" data-depth="0.4"></i>
+        <i class="blob b3" data-depth="0.15"></i>
+        <i class="ring r1" data-depth="0.5"></i>
+        <i class="ring r2" data-depth="0.8"></i>
+        <i class="grid-lines" data-depth="0.1"></i>
+        <i class="floor" data-depth="0.2"></i>
+      </div>
+      <div class="hero-copy" data-stagger>
+        <div class="eyebrow" data-reveal>
+          <span class="pill" data-status-pill data-state="loading"><i class="dot"></i><span data-status-text>Syncing</span></span>
+        </div>
+        <h1 id="hero-title" data-reveal>Solana’s loudest stalls,<br><span>one crowded bazaar.</span></h1>
+        <p class="hero-desc" data-reveal>SOOQ ranks the boosted stalls by what actually changes hands, then redraws the board as you stand there.</p>
+        <p class="hero-caps" data-reveal>quote <b>|</b> traded <b>|</b> depth <b>|</b> move</p>
+        <div class="hero-actions" data-reveal>
+{{HERO_ACTIONS}}
+        </div>
+      </div>
+
+      <div class="crew" data-stagger>
+        <div class="crew-member" data-reveal data-depth="0.7" data-spot>
+          <div class="portrait floaty f1">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="10" y="30" width="10" height="24" rx="3" fill="currentColor" opacity=".45"/><rect x="27" y="20" width="10" height="34" rx="3" fill="currentColor" opacity=".75"/><rect x="44" y="8" width="10" height="46" rx="3" fill="currentColor"/></svg>
+          </div>
+          <span>Quote</span><small>What one unit costs.</small>
+        </div>
+        <div class="crew-member" data-reveal data-depth="1" data-spot>
+          <div class="portrait floaty f2">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="24" fill="none" stroke="currentColor" stroke-width="4" opacity=".4"/><circle cx="32" cy="32" r="15" fill="none" stroke="currentColor" stroke-width="4" opacity=".7"/><circle cx="32" cy="32" r="6" fill="currentColor"/></svg>
+          </div>
+          <span>Traded</span><small>Who changed hands.</small>
+        </div>
+        <div class="crew-member crew-leader" data-reveal data-depth="1.35" data-spot>
+          <div class="portrait art"><img src="assets/logo-352.png" width="352" height="352" alt=""></div>
+          <span>SOOQ</span><small>Holds the whole board.</small>
+        </div>
+        <div class="crew-member" data-reveal data-depth="1" data-spot>
+          <div class="portrait floaty f4">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="12" width="48" height="10" rx="5" fill="currentColor"/><rect x="14" y="27" width="36" height="10" rx="5" fill="currentColor" opacity=".7"/><rect x="20" y="42" width="24" height="10" rx="5" fill="currentColor" opacity=".4"/></svg>
+          </div>
+          <span>Depth</span><small>Room until it slips.</small>
+        </div>
+        <div class="crew-member" data-reveal data-depth="0.7" data-spot>
+          <div class="portrait floaty f5">
+            <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M10 50L30 28l10 10 14-20" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M42 16h12v12" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <span>Move</span><small>Where a day ended.</small>
+        </div>
+      </div>
+
+      <div class="hero-bottom">
+        <a class="scroll-cue" href="#ledger" aria-label="Scroll down toward the ledger"><svg width="22" height="22" aria-hidden="true"><use href="#i-down"/></svg></a>
+      </div>
+    </section>
+
+    <section class="ticker-band" aria-label="Live ticker" data-reveal>
+      <div class="ticker" data-ticker>
+        <div class="ticker-track" data-ticker-track>
+          <span class="tick tick-skel" aria-hidden="true"><i></i><i></i></span>
+          <span class="tick tick-skel" aria-hidden="true"><i></i><i></i></span>
+          <span class="tick tick-skel" aria-hidden="true"><i></i><i></i></span>
+          <span class="tick tick-skel" aria-hidden="true"><i></i><i></i></span>
+          <span class="tick tick-skel" aria-hidden="true"><i></i><i></i></span>
+          <span class="tick tick-skel" aria-hidden="true"><i></i><i></i></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="pulse container" id="pulse" aria-labelledby="pulse-title">
+      <div class="pulse-copy" data-stagger>
+        <h2 id="pulse-title" data-reveal>Four numbers<br><span>read the room.</span></h2>
+        <p data-reveal>Stalls counted, money moved, room available and the sharpest mover. All of it is worked out from the ten rows below.</p>
+        <div class="button-row" data-reveal>
+          <a class="btn btn-primary" href="#ledger"><span>Read the ledger</span><svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+      <div class="stat-grid" data-stagger>
+        <article class="stat" data-reveal data-spot>
+          <span class="stat-label">Stalls counted</span>
+          <b class="stat-value" data-stat="count">—</b>
+          <small>Boosted, Solana only.</small>
+        </article>
+        <article class="stat" data-reveal data-spot>
+          <span class="stat-label">Traded in a day</span>
+          <b class="stat-value" data-stat="traded">—</b>
+          <small>Over all ten rows.</small>
+        </article>
+        <article class="stat" data-reveal data-spot>
+          <span class="stat-label">Depth on offer</span>
+          <b class="stat-value" data-stat="depth">—</b>
+          <small>Summed best pools.</small>
+        </article>
+        <article class="stat" data-reveal data-spot>
+          <span class="stat-label">Sharpest mover</span>
+          <b class="stat-value" data-stat="mover">—</b>
+          <small data-stat="mover-name">Waiting for the board.</small>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container ledger" id="ledger" aria-labelledby="ledger-title">
+      <div class="center-heading" data-stagger>
+        <h2 id="ledger-title" data-reveal>Ten stalls,<br><span>ranked by traffic.</span></h2>
+        <p data-reveal>Boosted Solana pairs, ordered by what changed hands over the last day. Clip any mint with one tap.</p>
+      </div>
+      <figure class="capture ledger-panel" data-reveal>
+        <div class="window-bar">
+          <span class="window-brand"><svg width="18" height="18" aria-hidden="true"><use href="#i-mark"/></svg>sooq ledger</span>
+          <span class="pill" data-status-pill data-state="loading"><i class="dot"></i><span data-status-text>Syncing</span></span>
+        </div>
+        <div class="sortbar" role="group" aria-label="Order the ledger">
+          <button type="button" class="chip is-on" data-sort="traded" aria-pressed="true">Traded</button>
+          <button type="button" class="chip" data-sort="move" aria-pressed="false">Move</button>
+          <button type="button" class="chip" data-sort="depth" aria-pressed="false">Depth</button>
+        </div>
+        <div class="table" role="table" aria-label="Ten busiest stalls" aria-busy="true" data-ledger>
+          <div class="thead" role="row">
+            <span role="columnheader">#</span>
+            <span role="columnheader">Stall</span>
+            <span role="columnheader" class="num">Quote</span>
+            <span role="columnheader" class="num">24h move</span>
+            <span role="columnheader" class="num">Traded</span>
+            <span role="columnheader" class="num">Depth</span>
+            <span role="columnheader" class="sr-only">Clip mint</span>
+          </div>
+          <div class="tbody" role="rowgroup" data-ledger-body>
+            {{SKELETON_ROWS}}
+          </div>
+        </div>
+        <p class="feed-note" role="status" aria-live="polite" data-feed-note hidden></p>
+        <noscript><p class="feed-note">The board draws itself with scripts on.</p></noscript>
+      </figure>
+    </section>
+
+    <section class="section lenses" id="lenses" aria-labelledby="lenses-title">
+      <div class="container center-heading" data-stagger>
+        <h2 id="lenses-title" data-reveal>The same ten stalls,<br><span>seen four ways.</span></h2>
+        <p data-reveal>Switch the lens to see who leads on traffic, room, swing or churn.</p>
+      </div>
+      <div class="container tabs" data-tabs data-reveal>
+        <div class="tab-list" role="tablist" aria-label="Lenses">
+          <button type="button" role="tab" class="tab" id="tab-traded" aria-selected="true" aria-controls="lens-panel" data-lens="traded"><span class="full">Traffic</span><span class="short">Traffic</span></button>
+          <button type="button" role="tab" class="tab" id="tab-depth" aria-selected="false" aria-controls="lens-panel" data-lens="depth" tabindex="-1"><span class="full">Room</span><span class="short">Room</span></button>
+          <button type="button" role="tab" class="tab" id="tab-move" aria-selected="false" aria-controls="lens-panel" data-lens="move" tabindex="-1"><span class="full">Swing</span><span class="short">Swing</span></button>
+          <button type="button" role="tab" class="tab" id="tab-churn" aria-selected="false" aria-controls="lens-panel" data-lens="churn" tabindex="-1"><span class="full">Churn</span><span class="short">Churn</span></button>
+        </div>
+        <div class="stage" id="lens-panel" role="tabpanel" aria-labelledby="tab-traded" tabindex="0" data-spot>
+          <div class="bars" data-bars aria-live="off">
+            {{BAR_SKELETONS}}
+          </div>
+        </div>
+        <div class="stage-caption">
+          <span class="tagline" data-lens-tagline>Where the crowd is.</span>
+          <p data-lens-desc>Dollars changing hands in the past day. The widest bar wins the day.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="how" aria-labelledby="how-title">
+      <div class="center-heading" data-stagger>
+        <h2 id="how-title" data-reveal>Cut from<br><span>public cloth.</span></h2>
+        <p data-reveal>Nothing hidden sits under the board. Every figure arrives from a public endpoint and is pulled again on a steady beat.</p>
+      </div>
+      <div class="workspace" data-stagger>
+        <figure class="capture" data-reveal data-spot>
+          <div class="window-bar"><span class="window-brand">pipeline</span></div>
+          <ol class="code-list">
+            <li><i>01</i><span>pull the boosted list</span></li>
+            <li><i>02</i><span>drop everything off Solana</span></li>
+            <li><i>03</i><span>look up pools, thirty per call</span></li>
+            <li><i>04</i><span>pick each stall’s deepest pool</span></li>
+            <li><i>05</i><span>rank by the day’s traffic, show ten</span></li>
+          </ol>
+        </figure>
+        <figure class="capture" data-reveal data-spot>
+          <div class="window-bar"><span class="window-brand">safeguards</span></div>
+          <ol class="code-list">
+            <li><i>a</i><span>a failed pull retries after two seconds, then four, then eight, up to a minute</span></li>
+            <li><i>b</i><span>the last good board stays on screen as retries tick on</span></li>
+            <li><i>c</i><span>a hidden tab goes quiet and pulls anew the instant it returns</span></li>
+            <li><i>d</i><span>a missing logo becomes a lettered tile</span></li>
+          </ol>
+        </figure>
+      </div>
+      <div class="chips-strip" data-reveal>
+        <span class="chip-static">Boosts</span><span class="chip-static">Pools</span><span class="chip-static">Logos</span><span class="chip-static">Quote</span><span class="chip-static">Traded</span><span class="chip-static">Depth</span>
+      </div>
+    </section>
+
+    <section class="section container strategy" id="records" aria-labelledby="records-title">
+      <div class="split">
+        <div class="section-copy" data-stagger>
+          <h2 id="records-title" data-reveal>Every outside fact<br><span>earns one record.</span></h2>
+          <p data-reveal>Mints, links and endpoints all live in a single register. A fact nobody has stated holds its slot, stays quiet and never links anywhere.</p>
+          <div class="principles">
+            <span data-reveal><svg width="20" height="20" aria-hidden="true"><use href="#i-check"/></svg>Pending slots never link</span>
+            <span data-reveal><svg width="20" height="20" aria-hidden="true"><use href="#i-check"/></svg>Stated links name their owner</span>
+            <span data-reveal><svg width="20" height="20" aria-hidden="true"><use href="#i-check"/></svg>The board never waits on the mint</span>
+          </div>
+        </div>
+        <div class="register-card" data-reveal data-spot>
+          <div class="form-header">
+            <div><span class="small-label">Register</span><h3>Facts on file</h3></div>
+            <span class="form-badge" aria-hidden="true"><svg width="18" height="18"><use href="#i-check"/></svg></span>
+          </div>
+          <div class="form-fields" data-slot="register">
+{{RECORD_FIELDS}}
+          </div>
+          <div class="auto-run">
+            <div>
+              <label for="calm-switch"><svg width="18" height="18" aria-hidden="true"><use href="#i-mark"/></svg>Calm mode</label>
+              <p>Stills every animation on the page.</p>
+            </div>
+            <button type="button" id="calm-switch" class="switch" role="switch" aria-checked="false" data-calm-switch><span class="thumb"></span></button>
+          </div>
+          <a class="btn btn-primary btn-block" href="#ledger"><span>Head for the ledger</span><svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container orchestrator" id="stages" aria-labelledby="stages-title">
+      <div class="split split-rev">
+        <div class="team-network" data-reveal>
+          <svg class="net-lines" viewBox="0 0 500 400" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M250 200 C 250 120, 120 110, 120 60" /><path d="M250 200 C 250 150, 380 140, 380 60" /><path d="M250 200 C 250 260, 120 280, 120 340" /><path d="M250 200 C 250 250, 380 260, 380 340" />
+          </svg>
+          <div class="coordinator" data-spot><svg width="34" height="34" aria-hidden="true"><use href="#i-mark"/></svg><strong>SOOQ</strong><span>One sweep</span></div>
+          <div class="network-jobs">
+            <div class="network-job" data-stage="boosts" data-spot><div><strong>Boosts</strong><span>Who is promoted.</span></div><i></i></div>
+            <div class="network-job" data-stage="filter" data-spot><div><strong>Filter</strong><span>Solana only.</span></div><i></i></div>
+            <div class="network-job" data-stage="pools" data-spot><div><strong>Pools</strong><span>The real ones.</span></div><i></i></div>
+            <div class="network-job" data-stage="rank" data-spot><div><strong>Rank</strong><span>Traffic first.</span></div><i></i></div>
+          </div>
+        </div>
+        <div class="section-copy" data-stagger>
+          <h2 id="stages-title" data-reveal>Four stages,<br><span>one clean sweep.</span></h2>
+          <div class="role-picker" role="group" aria-label="Pick a stage" data-reveal>
+            <button type="button" class="btn btn-ghost is-on" data-pick="all" aria-pressed="true">All</button>
+            <button type="button" class="btn btn-ghost" data-pick="boosts" aria-pressed="false">Boosts</button>
+            <button type="button" class="btn btn-ghost" data-pick="filter" aria-pressed="false">Filter</button>
+            <button type="button" class="btn btn-ghost" data-pick="pools" aria-pressed="false">Pools</button>
+            <button type="button" class="btn btn-ghost" data-pick="rank" aria-pressed="false">Rank</button>
+          </div>
+          <p class="specialist-desc" data-reveal data-pick-desc>Each refresh starts at the top, walks the four stages in order, and hands the finished board to all corners at once.</p>
+          <div class="principles">
+            <span data-reveal><svg width="20" height="20" aria-hidden="true"><use href="#i-check"/></svg>Every sweep starts clean</span>
+            <span data-reveal><svg width="20" height="20" aria-hidden="true"><use href="#i-check"/></svg>A failure leaves the last board up</span>
+            <span data-reveal><svg width="20" height="20" aria-hidden="true"><use href="#i-check"/></svg>Nothing here predicts a quote</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="platform-section container" id="chain" aria-labelledby="chain-title">
+      <div data-stagger>
+        <h2 id="chain-title" class="foundation" data-reveal>Lives on <span class="chain-name">Solana.</span></h2>
+        <p data-reveal>Chain reads go through one public endpoint, <b class="host">{{RPC_HOST}}</b>, as stated by the client.</p>
+        <div class="foundation-features" data-reveal>
+          <span><svg width="20" height="20" aria-hidden="true"><use href="#i-check"/></svg>Origin: client statement</span>
+          <span><svg width="20" height="20" aria-hidden="true"><use href="#i-check"/></svg>Scope: batch-level</span>
+          <span><svg width="20" height="20" aria-hidden="true"><use href="#i-check"/></svg>Public endpoint</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="final" aria-labelledby="final-title">
+      <div class="hero-atmosphere final-atmo" aria-hidden="true"><i class="blob b1"></i><i class="blob b2"></i></div>
+      <div data-stagger>
+        <h2 id="final-title" data-reveal>Wander<br><span>the whole floor.</span></h2>
+        <p data-reveal>Quotes shift, stalls change, the board stays level.</p>
+        <a class="btn btn-primary" href="#ledger" data-reveal><span>Step into the ledger</span><svg width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="crew small-crew" data-stagger aria-hidden="true">
+        <div class="crew-member" data-reveal><div class="portrait"><svg viewBox="0 0 64 64"><rect x="10" y="30" width="10" height="24" rx="3" fill="currentColor" opacity=".45"/><rect x="27" y="20" width="10" height="34" rx="3" fill="currentColor" opacity=".75"/><rect x="44" y="8" width="10" height="46" rx="3" fill="currentColor"/></svg></div></div>
+        <div class="crew-member" data-reveal><div class="portrait"><svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="24" fill="none" stroke="currentColor" stroke-width="4" opacity=".4"/><circle cx="32" cy="32" r="15" fill="none" stroke="currentColor" stroke-width="4" opacity=".7"/><circle cx="32" cy="32" r="6" fill="currentColor"/></svg></div></div>
+        <div class="crew-member crew-leader" data-reveal><div class="portrait art"><img src="assets/logo-96.png" width="96" height="96" alt=""></div></div>
+        <div class="crew-member" data-reveal><div class="portrait"><svg viewBox="0 0 64 64"><rect x="8" y="12" width="48" height="10" rx="5" fill="currentColor"/><rect x="14" y="27" width="36" height="10" rx="5" fill="currentColor" opacity=".7"/><rect x="20" y="42" width="24" height="10" rx="5" fill="currentColor" opacity=".4"/></svg></div></div>
+        <div class="crew-member" data-reveal><div class="portrait"><svg viewBox="0 0 64 64"><path d="M10 50L30 28l10 10 14-20" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M42 16h12v12" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <a class="brand" href="#top" aria-label="SOOQ, top of page"><img class="brand-logo" src="assets/logo-96.png" width="28" height="28" alt=""><span class="brand-word">sooq</span><span class="brand-suffix">.fun</span></a>
+    <nav aria-label="Lower links">
+      <a href="#ledger">Ledger</a>
+      <a href="#lenses">Lenses</a>
+      <a href="#stages">Stages</a>
+      <a href="#records">Records</a>
+    </nav>
+    <small>© SOOQ · Figures are drawn from public origins and promise nothing.</small>
+  </footer>
+</div>
+
+<script type="application/json" id="register-data">{{REGISTER_JSON}}</script>
+</body>
+</html>

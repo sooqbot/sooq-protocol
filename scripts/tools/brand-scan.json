@@ -1,0 +1,585 @@
+[
+  {
+    "file": "brand/LOGO SOOQ JPG.jpg.jpeg",
+    "bytes": 499553,
+    "sha256": "38c57830ece42838e709c489a4fae6a600a7f6260623a9e26b82484c6a8c709a",
+    "header": {
+      "format": "jpeg",
+      "height": 2000,
+      "width": 2000,
+      "components": 3,
+      "precision": 8,
+      "progressive": false
+    },
+    "decoded": {
+      "width": 2000,
+      "height": 2000
+    },
+    "alpha": {
+      "transparent": 0,
+      "partial": 0,
+      "opaque": 4000000
+    },
+    "subjectBox": {
+      "x": 567,
+      "y": 574,
+      "w": 868,
+      "h": 848
+    },
+    "dominant": [
+      {
+        "hex": "#050304",
+        "share": 82.802
+      },
+      {
+        "hex": "#ec4319",
+        "share": 0.76
+      },
+      {
+        "hex": "#e43c19",
+        "share": 0.556
+      },
+      {
+        "hex": "#fc731c",
+        "share": 0.537
+      },
+      {
+        "hex": "#fb6c1b",
+        "share": 0.515
+      },
+      {
+        "hex": "#f44b1a",
+        "share": 0.485
+      },
+      {
+        "hex": "#d3351a",
+        "share": 0.483
+      },
+      {
+        "hex": "#b42b19",
+        "share": 0.439
+      },
+      {
+        "hex": "#fc7b1e",
+        "share": 0.424
+      },
+      {
+        "hex": "#fd8b24",
+        "share": 0.403
+      },
+      {
+        "hex": "#cc331a",
+        "share": 0.39
+      },
+      {
+        "hex": "#dc3a1a",
+        "share": 0.389
+      },
+      {
+        "hex": "#fd8422",
+        "share": 0.372
+      },
+      {
+        "hex": "#fd9b2c",
+        "share": 0.37
+      },
+      {
+        "hex": "#bb2d1a",
+        "share": 0.358
+      },
+      {
+        "hex": "#f1451a",
+        "share": 0.337
+      },
+      {
+        "hex": "#fa641a",
+        "share": 0.329
+      },
+      {
+        "hex": "#f4531a",
+        "share": 0.269
+      },
+      {
+        "hex": "#f95c19",
+        "share": 0.268
+      },
+      {
+        "hex": "#c5311a",
+        "share": 0.254
+      },
+      {
+        "hex": "#fda433",
+        "share": 0.253
+      },
+      {
+        "hex": "#fd942a",
+        "share": 0.251
+      },
+      {
+        "hex": "#f5631b",
+        "share": 0.251
+      },
+      {
+        "hex": "#fdab33",
+        "share": 0.236
+      },
+      {
+        "hex": "#fdec8c",
+        "share": 0.206
+      },
+      {
+        "hex": "#fd9226",
+        "share": 0.205
+      },
+      {
+        "hex": "#f35b1a",
+        "share": 0.196
+      },
+      {
+        "hex": "#ea3e1a",
+        "share": 0.179
+      },
+      {
+        "hex": "#fdac3b",
+        "share": 0.175
+      },
+      {
+        "hex": "#fddc64",
+        "share": 0.174
+      },
+      {
+        "hex": "#fda22e",
+        "share": 0.173
+      },
+      {
+        "hex": "#fded93",
+        "share": 0.165
+      },
+      {
+        "hex": "#fde374",
+        "share": 0.16
+      },
+      {
+        "hex": "#fdbb3b",
+        "share": 0.157
+      },
+      {
+        "hex": "#ec4217",
+        "share": 0.15
+      },
+      {
+        "hex": "#fd7d21",
+        "share": 0.147
+      },
+      {
+        "hex": "#c22e19",
+        "share": 0.144
+      },
+      {
+        "hex": "#ec4b1a",
+        "share": 0.141
+      },
+      {
+        "hex": "#fdea84",
+        "share": 0.14
+      },
+      {
+        "hex": "#fdd453",
+        "share": 0.137
+      }
+    ]
+  },
+  {
+    "file": "brand/LOGO SOOQ PNG...png",
+    "bytes": 775290,
+    "sha256": "63c6da0df76e072c0373bbf432631e946d2f3dc81e309d7752bd61c980a67094",
+    "header": {
+      "width": 2000,
+      "height": 2000,
+      "bitDepth": 8,
+      "colourType": 6,
+      "interlace": 0,
+      "colourTypeName": "truecolour+alpha",
+      "chunks": [
+        "IHDR",
+        "eXIf",
+        "pHYs",
+        "iTXt",
+        "IDAT",
+        "IEND"
+      ]
+    },
+    "decoded": {
+      "width": 2000,
+      "height": 2000
+    },
+    "alpha": {
+      "transparent": 3283289,
+      "partial": 8869,
+      "opaque": 707842
+    },
+    "subjectBox": {
+      "x": 569,
+      "y": 576,
+      "w": 864,
+      "h": 844
+    },
+    "dominant": [
+      {
+        "hex": "#010000",
+        "share": 0.733
+      },
+      {
+        "hex": "#ed4219",
+        "share": 0.587
+      },
+      {
+        "hex": "#fc731b",
+        "share": 0.557
+      },
+      {
+        "hex": "#fb6c1a",
+        "share": 0.544
+      },
+      {
+        "hex": "#e43c19",
+        "share": 0.51
+      },
+      {
+        "hex": "#fc7b1d",
+        "share": 0.483
+      },
+      {
+        "hex": "#b42a19",
+        "share": 0.476
+      },
+      {
+        "hex": "#d33419",
+        "share": 0.475
+      },
+      {
+        "hex": "#fd8b24",
+        "share": 0.416
+      },
+      {
+        "hex": "#cc3219",
+        "share": 0.386
+      },
+      {
+        "hex": "#fd9b2b",
+        "share": 0.371
+      },
+      {
+        "hex": "#f44b19",
+        "share": 0.361
+      },
+      {
+        "hex": "#f14519",
+        "share": 0.353
+      },
+      {
+        "hex": "#bb2d19",
+        "share": 0.352
+      },
+      {
+        "hex": "#fd8421",
+        "share": 0.321
+      },
+      {
+        "hex": "#dc3919",
+        "share": 0.315
+      },
+      {
+        "hex": "#fa6419",
+        "share": 0.31
+      },
+      {
+        "hex": "#f5631a",
+        "share": 0.27
+      },
+      {
+        "hex": "#ea3e19",
+        "share": 0.262
+      },
+      {
+        "hex": "#fd9226",
+        "share": 0.235
+      },
+      {
+        "hex": "#f45319",
+        "share": 0.234
+      },
+      {
+        "hex": "#ec4317",
+        "share": 0.232
+      },
+      {
+        "hex": "#fda434",
+        "share": 0.232
+      },
+      {
+        "hex": "#fdab33",
+        "share": 0.231
+      },
+      {
+        "hex": "#fd942a",
+        "share": 0.231
+      },
+      {
+        "hex": "#f95c19",
+        "share": 0.221
+      },
+      {
+        "hex": "#f44b17",
+        "share": 0.209
+      },
+      {
+        "hex": "#fda32e",
+        "share": 0.208
+      },
+      {
+        "hex": "#c22e19",
+        "share": 0.204
+      },
+      {
+        "hex": "#fdec8c",
+        "share": 0.202
+      },
+      {
+        "hex": "#f35c19",
+        "share": 0.201
+      },
+      {
+        "hex": "#da3619",
+        "share": 0.19
+      },
+      {
+        "hex": "#fdac3b",
+        "share": 0.182
+      },
+      {
+        "hex": "#fddc64",
+        "share": 0.181
+      },
+      {
+        "hex": "#c53019",
+        "share": 0.179
+      },
+      {
+        "hex": "#fdbc3b",
+        "share": 0.171
+      },
+      {
+        "hex": "#fdee93",
+        "share": 0.163
+      },
+      {
+        "hex": "#fde374",
+        "share": 0.154
+      },
+      {
+        "hex": "#fd821f",
+        "share": 0.151
+      },
+      {
+        "hex": "#fdea84",
+        "share": 0.148
+      }
+    ]
+  },
+  {
+    "file": "brand/LOGO SOOQ PNG.png",
+    "bytes": 872795,
+    "sha256": "596a4e867bbe9d458026c8289231414af5d45e0fbf1075ffc7afb3ea7536084e",
+    "header": {
+      "width": 2000,
+      "height": 2000,
+      "bitDepth": 8,
+      "colourType": 6,
+      "interlace": 0,
+      "colourTypeName": "truecolour+alpha",
+      "chunks": [
+        "IHDR",
+        "IDAT",
+        "IEND"
+      ]
+    },
+    "decoded": {
+      "width": 2000,
+      "height": 2000
+    },
+    "alpha": {
+      "transparent": 0,
+      "partial": 0,
+      "opaque": 4000000
+    },
+    "subjectBox": {
+      "x": 567,
+      "y": 574,
+      "w": 868,
+      "h": 848
+    },
+    "dominant": [
+      {
+        "hex": "#050304",
+        "share": 82.801
+      },
+      {
+        "hex": "#ec4219",
+        "share": 0.838
+      },
+      {
+        "hex": "#e43c19",
+        "share": 0.592
+      },
+      {
+        "hex": "#fb731c",
+        "share": 0.559
+      },
+      {
+        "hex": "#fb6c1a",
+        "share": 0.531
+      },
+      {
+        "hex": "#f44b1a",
+        "share": 0.514
+      },
+      {
+        "hex": "#d3351a",
+        "share": 0.505
+      },
+      {
+        "hex": "#b42b19",
+        "share": 0.496
+      },
+      {
+        "hex": "#fc7b1e",
+        "share": 0.44
+      },
+      {
+        "hex": "#dc3a19",
+        "share": 0.431
+      },
+      {
+        "hex": "#cc331a",
+        "share": 0.408
+      },
+      {
+        "hex": "#fd8b24",
+        "share": 0.406
+      },
+      {
+        "hex": "#fd8422",
+        "share": 0.388
+      },
+      {
+        "hex": "#fd9b2c",
+        "share": 0.365
+      },
+      {
+        "hex": "#bb2d19",
+        "share": 0.363
+      },
+      {
+        "hex": "#f1451a",
+        "share": 0.352
+      },
+      {
+        "hex": "#f55319",
+        "share": 0.339
+      },
+      {
+        "hex": "#fa641a",
+        "share": 0.329
+      },
+      {
+        "hex": "#f95c19",
+        "share": 0.278
+      },
+      {
+        "hex": "#fd942a",
+        "share": 0.275
+      },
+      {
+        "hex": "#f5631b",
+        "share": 0.273
+      },
+      {
+        "hex": "#c4311a",
+        "share": 0.266
+      },
+      {
+        "hex": "#fda433",
+        "share": 0.252
+      },
+      {
+        "hex": "#fdab33",
+        "share": 0.233
+      },
+      {
+        "hex": "#f35c1a",
+        "share": 0.206
+      },
+      {
+        "hex": "#fdec8c",
+        "share": 0.201
+      },
+      {
+        "hex": "#e93e19",
+        "share": 0.196
+      },
+      {
+        "hex": "#fdac3b",
+        "share": 0.189
+      },
+      {
+        "hex": "#fd9226",
+        "share": 0.187
+      },
+      {
+        "hex": "#fda22e",
+        "share": 0.182
+      },
+      {
+        "hex": "#fddc64",
+        "share": 0.178
+      },
+      {
+        "hex": "#fdbb3b",
+        "share": 0.173
+      },
+      {
+        "hex": "#fded93",
+        "share": 0.169
+      },
+      {
+        "hex": "#ed4b1a",
+        "share": 0.164
+      },
+      {
+        "hex": "#fde374",
+        "share": 0.156
+      },
+      {
+        "hex": "#da361a",
+        "share": 0.147
+      },
+      {
+        "hex": "#fdd454",
+        "share": 0.145
+      },
+      {
+        "hex": "#fdea84",
+        "share": 0.143
+      },
+      {
+        "hex": "#fde57b",
+        "share": 0.141
+      },
+      {
+        "hex": "#c22f19",
+        "share": 0.135
+      }
+    ]
+  }
+]

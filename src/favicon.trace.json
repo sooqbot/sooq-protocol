@@ -1,0 +1,138 @@
+{
+ "source": {
+  "file": "brand/LOGO SOOQ PNG...png",
+  "sha256": "63c6da0df76e072c0373bbf432631e946d2f3dc81e309d7752bd61c980a67094",
+  "width": 2000,
+  "height": 2000,
+  "subjectBox": {
+   "x": 568,
+   "y": 575,
+   "w": 867,
+   "h": 847
+  }
+ },
+ "canvas": 32,
+ "scale": 0.032299999999999995,
+ "rect": {
+  "x": 2,
+  "y": 2.32,
+  "w": 28,
+  "h": 27.35,
+  "rx": 4.2
+ },
+ "eyes": [
+  {
+   "cx": 10.65,
+   "cy": 16.83,
+   "r": 2.49,
+   "glint": {
+    "cx": 9.46,
+    "cy": 15.13,
+    "r": 0.37
+   }
+  },
+  {
+   "cx": 21.47,
+   "cy": 16.83,
+   "r": 2.49,
+   "glint": {
+    "cx": 20.28,
+    "cy": 15.12,
+    "r": 0.37
+   }
+  }
+ ],
+ "gloss": {
+  "cx": 9.2,
+  "cy": 8.85,
+  "rx": 6.75,
+  "ry": 6.46
+ },
+ "stops": [
+  {
+   "offset": 0.2,
+   "token": "--b-cream"
+  },
+  {
+   "offset": 0.3,
+   "token": "--b-yellow-2"
+  },
+  {
+   "offset": 0.4,
+   "token": "--b-amber-2"
+  },
+  {
+   "offset": 0.5,
+   "token": "--b-orange-2"
+  },
+  {
+   "offset": 0.6,
+   "token": "--b-orange"
+  },
+  {
+   "offset": 0.7,
+   "token": "--b-red"
+  },
+  {
+   "offset": 0.8,
+   "token": "--b-red"
+  },
+  {
+   "offset": 0.9,
+   "token": "--b-red"
+  }
+ ],
+ "gridKey": [
+  "--b-void",
+  "--b-ember-1",
+  "--b-ember-2",
+  "--b-red-deep",
+  "--b-red",
+  "--b-red-hot",
+  "--b-orange",
+  "--b-orange-2",
+  "--b-amber",
+  "--b-amber-2",
+  "--b-gold",
+  "--b-yellow",
+  "--b-yellow-2",
+  "--b-butter",
+  "--b-cream",
+  "--b-ivory",
+  "--b-white"
+ ],
+ "grid": [
+  "................................",
+  "................................",
+  "......nnooooooonmllkkjjjii......",
+  "....oooooooooonnmllkkjjiihgg....",
+  "...opppoooooonnnmmlkkjiihhggg...",
+  "..nopooooooonnnmmllkjjiihggggg..",
+  "..nooooooooonnnmmlkkjjihhggggg..",
+  "..moonooooonnnmmllkkjiihhggggg..",
+  "..mnnnoonnnnnmmllkkjjiihgggfff..",
+  "..mnnnnnnnnnmmllkkjjiihhgggfff..",
+  "..mmnnmmnnmmmllkkjjjiihgggfffe..",
+  "..mnnllmmmmlllkkjjjiihhggfffee..",
+  "..mnlkkllmlkkkjjjjiihhgggffeee..",
+  "..mlkkkkklkkkjjjiiihhgggfffede..",
+  "..mkjjjkjdccijjiiihgdccfffeede..",
+  "..ljjjjjddaacjiiihhcdaacffeddf..",
+  "..kjiiiicaaaaiihhhgaaaacfeeddf..",
+  "..kiiiiicaaacihhhggbaaacfeddef..",
+  "..kihhhhebabdhhhgggdaacdeeddef..",
+  "..jhhhhhhgdghhggggggedeeedddff..",
+  "..jhgggghhhhggggggffffeedddeff..",
+  "..igggggggggggggfffffeedddefff..",
+  "..iggggggggggffffffeeedddeffff..",
+  "..igfffffffffffffeeeedddefffff..",
+  "..igffffffffffeeeeeddddeffffef..",
+  "..hfffffeeeeeeeeddddddeffffeef..",
+  "..hffeeeeeeeedddddddefffffeefg..",
+  "...gfeeddddddddddeefffffeeeef...",
+  "....feeddddddeeefffffffeeeff....",
+  "......feeeffffgggffffffffg......",
+  "................................",
+  "................................"
+ ]
+}
